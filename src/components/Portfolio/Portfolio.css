@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --max-width: 1200px;
+  --color-primary: hsl(14,90%, 53%);
+  --color-primary-light: hsl(14,96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --grayText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /* tipo de letra */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.portafolio .secContainer {
+  gap: 2rem;
+}
+.portafolio .secContainer .leftContent .segHeading {
+  margin-bottom: 0.5rem;
+}
+.portafolio .secContainer .leftContent .grid .singlePortafolio {
+  gap: 1rem;
+  align-items: flex-start;
+}
+.portafolio .secContainer .leftContent .grid .singlePortafolio .iconDiv img {
+  height: 50px;
+  width: 50px;
+}
+.portafolio .secContainer .leftContent .grid .singlePortafolio .infor h4 {
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .portafolio .secContainer .leftContent .segHeading h3 {
+    font-size: var(--h2FontSize);
+  }
+  .portafolio .secContainer .leftContent .segHeading p {
+    font-size: var(--normalFontSize);
+    padding: 0.5rem 0;
+  }
+  .portafolio .secContainer .leftContent .grid .singlePortafolio {
+    gap: 1.5rem;
+  }
+  .portafolio .secContainer .leftContent .grid .singlePortafolio .iconDiv img {
+    height: 60px;
+    width: 60px;
+  }
+  .portafolio .secContainer .leftContent .grid .singlePortafolio .infor h4 {
+    padding-bottom: 0.5rem;
+    font-size: var(--h3FontSize);
+  }
+  .portafolio .secContainer .leftContent .grid .singlePortafolio .infor p {
+    font-size: var(--normalFontSize);
+  }
+}
+@media screen and (min-width: 660px) {
+  .portafolio .secContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portafolio .secContainer .leftContent .segHeading h3 {
+    font-size: 2rem;
+  }
+  .portafolio .secContainer .leftContent .segHeading p {
+    font-size: var(--h3FontSize);
+  }
+  .portafolio .secContainer .leftContent .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portafolio .secContainer .leftContent .grid .singlePortafolio {
+    gap: 1.5rem;
+  }
+  .portafolio .secContainer .rightContent {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portafolio .secContainer .rightContent img {
+    margin: auto;
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 820px) {
+  .portafolio .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portafolio .secContainer .leftContent .segHeading h3 {
+    font-size: var(--h2FontSize);
+  }
+  .portafolio .secContainer .leftContent .segHeading p {
+    font-size: var(--h3FontSize);
+  }
+  .portafolio .secContainer .leftContent .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portafolio .secContainer .leftContent .grid .singlePortafolio {
+    gap: 1.5rem;
+  }
+  .portafolio .secContainer .rightContent img {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .portafolio .secContainer {
+    gap: 3rem;
+  }
+  .portafolio .secContainer .leftContent .segHeading h3 {
+    font-size: 2rem;
+  }
+  .portafolio .secContainer .leftContent .segHeading p {
+    font-size: var(--h3FontSize);
+  }
+  .portafolio .secContainer .leftContent .grid {
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+  .portafolio .secContainer .leftContent .grid .singlePortafolio {
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=Portfolio.css.map */

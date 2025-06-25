@@ -1,0 +1,65 @@
+$primary-color: #3498db;
+$text-color: #333;
+$border-color: #ddd;
+$transition-time: 0.3s;
+
+// Estilos del acordeón
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+
+  &-item {
+    margin-bottom: 10px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &-header {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: lighten($primary-color, 40%);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: $text-color;
+    transition: background-color $transition-time;
+
+    &:hover {
+      background-color: lighten($primary-color, 30%);
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  &-icon {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-time ease-out;
+    background-color: white;
+
+    &.show {
+      max-height: 200px; // Ajusta según el contenido
+    }
+
+    p {
+      padding: 20px;
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+  
+}
